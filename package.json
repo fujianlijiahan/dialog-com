@@ -10,12 +10,12 @@
     "modal"
   ],
   "bugs": {
-    "url": "https://github.com/component/dialog/issues"
+    "url": "https://github.com/fujianlijiahan/dialog-com/issues"
   },
-  "homepage": "https://github.com/component/dialog",
+  "homepage": "https://github.com/fujianlijiahan/dialog-com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:component/dialog.git"
+    "url": "https://github.com/fujianlijiahan/dialog-com.git"
   },
   "main": "index.js",
   "scripts": {
