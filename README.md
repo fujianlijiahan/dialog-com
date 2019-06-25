@@ -1,6 +1,7 @@
-##使用
+## 使用
 ### *npm i dialog-com*
 ### *import dialogCom from 'dialog-com'*
+#### vue的弹出模态框,dialog,modal
 ```
 <dialog-com 
     :title="title"
