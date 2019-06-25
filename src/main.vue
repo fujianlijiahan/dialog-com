@@ -36,7 +36,7 @@
     export default {
         name: 'dialog-com',
         mounted(){
-           console.log('欢迎使用dialog-com,1138416676@qq.com')
+            console.log('欢迎使用dialog-com %c 😎 1138416676@qq.com', 'color:red')
         },
         props: {
             width: {
