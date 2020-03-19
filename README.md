@@ -10,10 +10,23 @@
     :fullScreen="false"
     :closeOnClickModal="true"
     :closeOnPressEscape="true"
-    :visible="false">
-        <html></html>
+    :visible.sync="dialogVisible">
+         <html></html>
+         <div slot="footer" class="dialog-footer">
+             <el-button @click="dialogVisible = false">取 消</el-button>
+             <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+         </div>
     <dialog-com>
+<script>
+    export default{
+        data(){
+            return{
+                dialogVisible:false
+            }
+        }
+    }
 
+</script>
 ```
 <table>
 <tr>

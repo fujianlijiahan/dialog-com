@@ -8,7 +8,7 @@
                 <div class="myDialogContent"
                      :style="containerStyle">
                     <div class="dialogComHeader">
-                        <el-row>
+                        <el-row v-if="title !== ''">
                             <el-col :span="12">
                 <span class="dialogComTitle">
                   {{title}}
@@ -17,6 +17,12 @@
                             <el-col :span="12" style="text-align: right;">
                 <span class="dialogComClose"
                       @click="closeFun()">X</span>
+                            </el-col>
+                        </el-row>
+                        <el-row v-else>
+                            <el-col :span="24" style="text-align: right;">
+               <span class="dialogComClose"
+                     @click="closeFun()">X</span>
                             </el-col>
                         </el-row>
                     </div>
@@ -143,7 +149,6 @@
         margin: 0;
         background: rgba(0, 0, 0, 0.6);
     }
-
     .myDialog .myDialogContent {
         /*top: 25%;*/
         background-color: #fff;
@@ -155,15 +160,12 @@
         /*position: absolute;*/
         /*transform: translate(50%, 0%);*/
     }
-
     .myDialog .myDialogContent .dialogComHeader {
         margin: 15px 20px 0 15px;
     }
-
     .myDialog .myDialogContent .dialogComHeader .dialogComTitle {
         font-size: 20px;
     }
-
     .myDialog .myDialogContent .dialogComHeader .dialogComClose {
         color: #909399;
         display: inline-block;
@@ -173,20 +175,16 @@
         line-height: 20px;
         transition: transform 0.5s;
     }
-
     .myDialog .myDialogContent .dialogComHeader .dialogComClose:hover {
         cursor: pointer;
         color: #409EFF;
         transform: rotate(720deg);
     }
-
     .myDialog .myDialogContent .dialogComBody {
         margin: 15px 20px 0 15px;
     }
-
     .myDialog .myDialogContent .dialogComFooter {
         text-align: right;
         margin: 15px 20px 20px 15px;
     }
-
 </style>
